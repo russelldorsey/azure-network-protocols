@@ -7,8 +7,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
+- Microsoft Azure (Virtual Machines/Compute)
 - Various Command-Line Tools
 - Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
@@ -20,7 +20,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
+- How to use Remote Desktop
 - Step 2
 - Step 3
 - Step 4
@@ -31,7 +31,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To connect to another computer or virtual machine using Remote Desktop, first make sure the remote computer has Remote Desktop enabled and that you have permission to access it. On your computer, open the Start menu, search for Remote Desktop Connection, and open the application. In the Computer field, type the IP address of the remote computer you want to connect to. Click Connect, and when prompted, enter the username and password for the account that has access to that computer. After you enter the credentials, click OK, and the Remote Desktop session will open, allowing you to control the remote computer as if you were sitting in front of it.
 </p>
 <br />
 
