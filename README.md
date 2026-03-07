@@ -47,6 +47,22 @@ To create a Resource Group in Microsoft Azure, first sign in to the Azure Portal
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+To create a virtual machine (VM) in Microsoft Azure, first sign in to the Azure Portal. In the search bar at the top, type Virtual Machines and select it from the results. On the Virtual Machines page, click Create, then choose Azure virtual machine. On the Basics tab, select your subscription, choose or create a resource group (example RG-Network-Activities), and enter a virtual machine name of your choice (example windows-vm). Next, select the region where the VM will be hosted and choose an image (for example, Windows Server or Windows 11). Select a size for the VM based on the CPU and memory you want. Under Administrator account, create a username and password that will be used to sign in to the VM. Make sure Remote Desktop (RDP) is allowed so you can access the machine later. After filling in the required settings, click Review + Create, then click Create. Azure will deploy the virtual machine, and once the process is complete you can connect to it using Remote Desktop from the VM’s public IP address.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
