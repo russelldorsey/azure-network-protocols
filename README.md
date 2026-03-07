@@ -21,7 +21,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>High-Level Steps</h2>
 
 - How to use Remote Desktop
-- Step 2
+- Create Resource Group
 - Step 3
 - Step 4
 
@@ -39,7 +39,7 @@ To connect to another computer or virtual machine using Remote Desktop, first ma
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To create a Resource Group in Microsoft Azure, first sign in to the Azure Portal. In the search bar at the top of the portal, type Resource groups and select it from the results. On the Resource Groups page, click Create, next select the subscription you want to use, then enter a Resource group name. Choose a Region, which determines where the group’s metadata will be stored. After entering the required information, click Review + Create, then click Create again. Once the deployment finishes, the new resource group will appear in your Azure portal and can be used to organize and manage related resources such as virtual machines, storage accounts, and networks.
 </p>
 <br />
 
