@@ -16,14 +16,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (22H2)
-- Ubuntu Server 20.04
+- Ubuntu Server 22.04
 
 <h2>High-Level Steps</h2>
 
 - How to use Remote Desktop
 - Create Resource Group
 - Create Windows 10 Virtual Machine (VM)
-- Step 4
+- Create Linux Virtual Machine (VM)
 
 <h2>Actions and Observations</h2>
 
@@ -47,15 +47,15 @@ To create a Resource Group in Microsoft Azure, first sign in to the Azure Portal
 <img width="1091" height="701" alt="Screenshot 2026-03-06 183041" src="https://github.com/user-attachments/assets/4985ad3a-60dc-476a-b262-d89563d72b9d" />
 </p>
 <p>
-To create a virtual machine (VM) in Microsoft Azure, first sign in to the Azure Portal. In the search bar at the top, type Virtual Machines and select it from the results. On the Virtual Machines page, click Create, then choose Azure virtual machine. On the Basics tab, select your subscription, choose or create a resource group (example RG-Network-Activities), and enter a virtual machine name of your choice (example windows-vm). Next, select the region where the VM will be hosted and choose an Image (for example, Windows 10). Select a VM Size based on the CPU and memory you want (example Standard_D2s_v3 - 2 vcpus, 8 GiB memory). Under the Administrator account, create a username and password to sign in to the VM. Make sure Remote Desktop (RDP) is allowed so you can access the machine later. Near the bottom of the page, select Licensing by placing a check. On the Networking tab, to rename the Virtual network, click Create new, then enter a name of your choice (example Lab2-Vnet). When ready to deploy the VM, click Review + Create, then click Create. Azure will deploy the virtual machine, and once the process is complete, you can connect to it using Remote Desktop from the VM’s public IP address.
+To create a Windows 10 virtual machine (VM) in Microsoft Azure, first sign in to the Azure Portal. In the search bar at the top, type Virtual Machines and select it from the results. On the Virtual Machines page, click Create, then choose Azure virtual machine. On the Basics tab, select your subscription, choose or create a resource group (example RG-Network-Activities), and enter a virtual machine name of your choice (example windows-vm). Next, select the region where the VM will be hosted and choose an Image (for example, Windows 10). Select a VM Size based on the CPU and memory you want (example Standard_D2s_v3 - 2 vcpus, 8 GiB memory). Under the Administrator account, create a username and password to sign in to the VM. Make sure Remote Desktop (RDP) is allowed so you can access the machine later. Near the bottom of the page, select Licensing by placing a check. On the Networking tab, to rename the Virtual network, click Create new, then enter a name of your choice (example Lab2-Vnet). When ready to deploy the VM, click Review + Create, then click Create. Azure will deploy the virtual machine, and once the process is complete, you can connect to it using Remote Desktop from the VM’s public IP address.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1093" height="704" alt="Screenshot 2026-03-07 123937" src="https://github.com/user-attachments/assets/d8eb0521-d4ec-46d2-aa84-b044ca706a54" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To create a Linux virtual machine (VM) in Microsoft Azure, first sign in to the Azure Portal. In the search bar at the top, type Virtual Machines and select it from the results. On the Virtual Machines page, click Create, then choose Azure virtual machine. On the Basics tab, select your subscription, choose or create a resource group (example RG-Network-Activities), and enter a virtual machine name of your choice (example linux-vm). Next, select the region where the VM will be hosted and choose an Image (for example, Ubuntu Server 22.04). Select a VM Size based on the CPU and memory you want (example Standard_D2s_v3 - 2 vcpus, 8 GiB memory). Under the Administrator account, for Authentication type select Password, then create a username and password to sign in to the VM. Make sure Remote Desktop (RDP) is allowed so you can access the machine later. Now, click Next until you reach the Networking tab. To rename the Virtual network, click Create new, then enter a name of your choice (example: Lab2-Vnet). When ready to deploy the VM, click Review + Create, then click Create. Azure will deploy the virtual machine, and once the process is complete, you can connect to it using Remote Desktop from the VM’s public IP address.
 </p>
 <br />
 
