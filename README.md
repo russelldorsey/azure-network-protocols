@@ -22,7 +22,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - How to use Remote Desktop
 - Create Resource Group
-- Step 3
+- Create Windows 10 Virtual Machine (VM)
 - Step 4
 
 <h2>Actions and Observations</h2>
