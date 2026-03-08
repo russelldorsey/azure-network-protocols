@@ -28,7 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1094" height="701" alt="Screenshot 2026-03-07 172833" src="https://github.com/user-attachments/assets/61e055ad-a361-42e0-a8cc-d426a3fc5ac1" />
 </p>
 <p>
 To connect to another computer or virtual machine using Remote Desktop, first make sure the remote computer has Remote Desktop enabled and that you have permission to access it. On your computer, open the Start menu, search for Remote Desktop Connection, and open the application. In the Computer field, type the IP address of the remote computer you want to connect to. Click Connect, and when prompted, enter the username and password for the account that has access to that computer. After you enter the credentials, click OK, and the Remote Desktop session will open, allowing you to control the remote computer as if you were sitting in front of it.
