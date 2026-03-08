@@ -26,6 +26,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create Linux Virtual Machine (VM)
 - Download Wireshark
 - Observe ICMP Traffic
+- Configure Firewall (Network Security Group)
 
 <h2>Actions and Observations</h2>
 
@@ -83,7 +84,9 @@ Next, open PowerShell by using the Search option in the Start menu on the Window
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To configure the firewall using a Network Security Group (NSG) in Azure, first open the virtual machine you want to configure (for example, linux-vm) in the Azure portal. Select Networking, then click Network settings. Under the Network security group section, click the name of the NSG attached to the VM. Once the NSG page opens, go to Settings, select Inbound security rules, and click Add to create a new rule.
+
+In the new rule settings, leave Source set to Any and Destination set to Any. For Destination port ranges, enter an asterisk (*), which represents any port. Under Protocol, select ICMPv4, and under Action, choose Deny so that ICMP ping requests will be blocked. Next, set the Priority to 290 so the rule takes precedence over lower-priority rules. After entering these settings, click Add to create the rule. Once the rule is applied, try sending another ICMP ping from the primary VM (example Windows VM). The ping request should now fail with "Request timed out", indicating that the firewall rule is successfully blocking the traffic.
 </p>
 <br />
 
