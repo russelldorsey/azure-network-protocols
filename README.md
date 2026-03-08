@@ -29,6 +29,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Configure Firewall (Network Security Group)
 - Observe SSH Traffic
 - Observe DHCP Traffic
+- Observe DNS Traffic
+- Observe RDP Traffic
 
 <h2>Actions and Observations</h2>
 
@@ -109,6 +111,16 @@ Next, open PowerShell on the Windows VM by using the Search option in the Start 
 To observe DHCP traffic for a virtual machine using Wireshark, first open Wireshark on the VM where you want to capture the network traffic. In the Capture section, select the active network adapter, which is usually Ethernet, by clicking on it once. Next, click the shark fin icon at the top of the window to start capturing packets. Once the capture begins, go to the Apply a display filter field at the top of Wireshark, type dhcp, and press Enter. This filter will display only DHCP traffic and hide other network packets.
 
 Next, you need to generate DHCP traffic from the VM. On a Windows VM, right-click PowerShell and Run as administrator from the Start menu. First type ipconfig /release and press Enter. This command releases the current IP address assigned to the VM. Then type ipconfig /renew and press Enter to request a new IP address from the DHCP server. While these commands are running, Wireshark will capture the DHCP packets. You should see the DHCP process in Wireshark, including DHCP Discover, DHCP Offer, DHCP Request, and DHCP Acknowledgment messages, which show the VM communicating with the DHCP server to obtain a new IP address.
+</p>
+<br />
+
+<p>
+<img width="809" height="521" alt="Screenshot 2026-03-08 163724" src="https://github.com/user-attachments/assets/456205db-4980-4567-8efa-17d365ba3761" />
+</p>
+<p>
+To observe DNS traffic for a virtual machine using Wireshark, first open Wireshark on the VM where you want to capture the network traffic. In the Capture section, click on the active network adapter, which is usually Ethernet, to select it. Next, click the shark fin icon at the top of the window to begin capturing packets. After the capture starts, go to the Apply a display filter field at the top of Wireshark, type dns, and press Enter. This filter will display only DNS-related traffic and hide other network packets.
+
+Next, you need to generate DNS traffic from the VM. On a Windows VM, open Command Prompt or PowerShell by using the Search option in the Start menu. In the command window, type nslookup disney.com and press Enter (You can use any website). This command sends a DNS query to a DNS server to resolve a domain name to an IP address. While this command runs, Wireshark will capture the DNS request and response packets. In Wireshark, you can see the DNS query sent from the VM and the response from the DNS server, showing the IP address associated with the domain name.
 </p>
 <br />
 
