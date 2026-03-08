@@ -91,10 +91,12 @@ In the new rule settings, leave Source set to Any and Destination set to Any. Fo
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="809" height="519" alt="Screenshot 2026-03-08 152813" src="https://github.com/user-attachments/assets/cb19be37-ff14-4054-91e3-82b0c54a1af1" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To observe SSH traffic between two virtual machines using Wireshark, first open Wireshark on the VM where you want to capture the network traffic, such as a Windows VM. In the Capture section, click Ethernet once to select the active network adapter. Next, click the shark fin icon under the File menu to begin capturing packets. After the packet capture begins, go to the Apply a display filter field at the top of the window, type ssh, and press Enter. This filter will display only SSH traffic in Wireshark.
+
+Next, open PowerShell on the Windows VM by using the Search option in the Start menu. In PowerShell, type the command to connect to the second VM (Linux VM) by typing ssh, then entering the username of the second VM (labuser), followed by the private IP address of the second VM (Linux VM). An example command would be ssh labuser@10.0.0.5. When you run the command, PowerShell will ask, “Are you sure you want to continue connecting (yes/no/[fingerprint])?” Type yes and press Enter. After this, system information will be displayed, and a command line for the remote machine will appear.
 </p>
 <br />
 
