@@ -44,7 +44,7 @@ To create a Resource Group in Microsoft Azure, first sign in to the Azure Portal
 <br />
 
 <p>
-<img width="1091" height="701" alt="Screenshot 2026-03-06 183041" src="https://github.com/user-attachments/assets/4985ad3a-60dc-476a-b262-d89563d72b9d" />
+<img width="1089" height="704" alt="Screenshot 2026-03-07 130430" src="https://github.com/user-attachments/assets/35988661-19b8-4884-b06a-b837ffdfce77" />
 </p>
 <p>
 To create a Windows 10 virtual machine (VM) in Microsoft Azure, first sign in to the Azure Portal. In the search bar at the top, type Virtual Machines and select it from the results. On the Virtual Machines page, click Create, then choose Azure virtual machine. On the Basics tab, select your subscription, choose or create a resource group (example RG-Network-Activities), and enter a virtual machine name of your choice (example windows-vm). Next, select the region where the VM will be hosted and choose an Image (for example, Windows 10). Select a VM Size based on the CPU and memory you want (example Standard_D2s_v3 - 2 vcpus, 8 GiB memory). Under the Administrator account, create a username and password to sign in to the VM. Make sure Remote Desktop (RDP) is allowed so you can access the machine later. Near the bottom of the page, select Licensing by placing a check. On the Networking tab, to rename the Virtual network, click Create new, then enter a name of your choice (example Lab2-Vnet). When ready to deploy the VM, click Review + Create, then click Create. Azure will deploy the virtual machine, and once the process is complete, you can connect to it using Remote Desktop from the VM’s public IP address.
