@@ -27,6 +27,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Download Wireshark
 - Observe ICMP Traffic
 - Configure Firewall (Network Security Group)
+- Observe SSH Traffic
 
 <h2>Actions and Observations</h2>
 
@@ -96,7 +97,7 @@ In the new rule settings, leave Source set to Any and Destination set to Any. Fo
 <p>
 To observe SSH traffic between two virtual machines using Wireshark, first open Wireshark on the VM where you want to capture the network traffic, such as a Windows VM. In the Capture section, click Ethernet once to select the active network adapter. Next, click the shark fin icon under the File menu to begin capturing packets. After the packet capture begins, go to the Apply a display filter field at the top of the window, type ssh, and press Enter. This filter will display only SSH traffic in Wireshark.
 
-Next, open PowerShell on the Windows VM by using the Search option in the Start menu. In PowerShell, type the command to connect to the second VM (Linux VM) by typing ssh, then entering the username of the second VM (labuser), followed by the private IP address of the second VM (Linux VM). An example command would be ssh labuser@10.0.0.5. When you run the command, PowerShell will ask, “Are you sure you want to continue connecting (yes/no/[fingerprint])?” Type yes and press Enter. After this, system information will be displayed, and a command line for the remote machine will appear.
+Next, open PowerShell on the Windows VM by using the Search option in the Start menu. In PowerShell, type the command to connect to the second VM (Linux VM) by typing ssh, then entering the username of the second VM (labuser), followed by the private IP address (10.0.0.5) of the second VM (Linux VM). An example command would be "ssh labuser@10.0.0.5". When you run the command, PowerShell will ask, “Are you sure you want to continue connecting (yes/no/[fingerprint])?” Type yes and press Enter. After this, system information will be displayed, and a command line for the remote machine will appear. You can now type commands for the second VM (Linux VM).
 </p>
 <br />
 
