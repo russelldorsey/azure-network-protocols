@@ -128,7 +128,7 @@ Next, you need to generate DNS traffic from the VM. On a Windows VM, open Comman
 <img width="809" height="521" alt="Screenshot 2026-03-08 165002" src="https://github.com/user-attachments/assets/fcafb723-d3f7-4caf-8863-a3050d0dc837" />
 </p>
 <p>
-To observe RDP traffic for a virtual machine using Wireshark, first open Wireshark on the VM where you want to capture the network traffic. In the Capture section, select the active network adapter, which is usually Ethernet, by clicking on it once. Next, click the shark fin icon at the top of the window to begin capturing packets. After the capture begins, go to the Apply a display filter field at the top of Wireshark, type tcp.port == 3389, and press Enter. This filter will display only traffic on port 3389, the default port for Remote Desktop Protocol (RDP). You can see all the traffic you are using while connected to the current VM.
+To observe RDP traffic for a virtual machine using Wireshark, first open Wireshark on the VM where you want to capture the network traffic. In the Capture section, select the active network adapter, which is usually Ethernet, by clicking on it once. Next, click the shark fin icon at the top of the window to begin capturing packets. After the capture begins, go to the Apply a display filter field at the top of Wireshark, type tcp.port == 3389, and press Enter. This filter will display only traffic on port 3389, the default port for Remote Desktop Protocol (RDP). You can see all the traffic your current VM is using while using remote desktop.
 </p>
 <br />
 
