@@ -28,6 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Observe ICMP Traffic
 - Configure Firewall (Network Security Group)
 - Observe SSH Traffic
+- Observe DHCP Traffic
 
 <h2>Actions and Observations</h2>
 
@@ -102,10 +103,12 @@ Next, open PowerShell on the Windows VM by using the Search option in the Start 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="809" height="520" alt="Screenshot 2026-03-08 161935" src="https://github.com/user-attachments/assets/edc25499-1ae6-4c72-ab7d-eaf9e82b9137" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To observe DHCP traffic for a virtual machine using Wireshark, first open Wireshark on the VM where you want to capture the network traffic. In the Capture section, select the active network adapter, which is usually Ethernet, by clicking on it once. Next, click the shark fin icon at the top of the window to start capturing packets. Once the capture begins, go to the Apply a display filter field at the top of Wireshark, type dhcp, and press Enter. This filter will display only DHCP traffic and hide other network packets.
+
+Next, you need to generate DHCP traffic from the VM. On a Windows VM, right-click PowerShell and Run as administrator from the Start menu. First type ipconfig /release and press Enter. This command releases the current IP address assigned to the VM. Then type ipconfig /renew and press Enter to request a new IP address from the DHCP server. While these commands are running, Wireshark will capture the DHCP packets. You should see the DHCP process in Wireshark, including DHCP Discover, DHCP Offer, DHCP Request, and DHCP Acknowledgment messages, which show the VM communicating with the DHCP server to obtain a new IP address.
 </p>
 <br />
 
