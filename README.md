@@ -81,7 +81,7 @@ Next, open PowerShell by using the Search option in the Start menu on the Window
 <br />
 
 <p>
-<img width="1247" height="672" alt="Screenshot 2026-03-07 185333" src="https://github.com/user-attachments/assets/8f50eec2-8aa8-4f59-b964-b4ce47115666" />
+<img width="1247" height="673" alt="Screenshot 2026-03-07 185756" src="https://github.com/user-attachments/assets/b5552137-f195-476c-9f0a-dca5f8ce04be" />
 </p>
 <p>
 To configure the firewall using a Network Security Group (NSG) in Azure, first open the virtual machine you want to configure (for example, linux-vm) in the Azure portal. Select Networking, then click Network settings. Under the Network security group section, click the name of the NSG attached to the VM. Once the NSG page opens, go to Settings, select Inbound security rules, and click Add to create a new rule.
