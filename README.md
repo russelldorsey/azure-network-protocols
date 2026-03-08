@@ -25,7 +25,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create Windows 10 Virtual Machine (VM)
 - Create Linux Virtual Machine (VM)
 - Download Wireshark
-- 
+- Observe ICMP Traffic
 
 <h2>Actions and Observations</h2>
 
