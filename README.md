@@ -65,7 +65,7 @@ To create a Linux virtual machine (VM) in Microsoft Azure, first sign in to the 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To download the Windows x64 installer for Wireshark, open a web browser and go to the official Wireshark website at "https://www.wireshark.org". On the homepage, click the Download button. Under the Windows section, look for the option labeled Windows x64 Installer (this is the 64-bit version for most modern Windows computers). Click the link, and the installer file will begin downloading. Once the download is complete, you can open the file from your browser’s download bar or your Downloads folder to begin the installation process. To install, you can keep clicking Next and Install through each window without selecting any options.
 </p>
 <br />
 
